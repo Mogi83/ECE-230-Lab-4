@@ -21,7 +21,10 @@ Summarize your learnings from the lab here.
 
 ### Why are the groups of 1’s (or 0’s) that we select in the KMap able to go across edges?
 
+KMap is actually a circular table that we display as a flat table, the edge outputs connect in a circular manner. 
+
 ### Why are the names Sum of Products and Products of Sums?
+The literal definition of what is happening. In Sum of Products by default when we pull a logical expression we default to and (boolean product) and every subsequent term is then combined with an or (boolean sum)
 
 ### Open the test.v file – how are we able to check that the signals match using XOR?
 
