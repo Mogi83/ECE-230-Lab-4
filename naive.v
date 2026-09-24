@@ -11,6 +11,6 @@ assign Y =
     (~A & B & C & ~D) |
     (A & ~B & C & ~D) |
     (A & B & ~C & ~D) |
-    (A & B & C & ~D) |; // Enter your equation here
+    (A & B & C & ~D);
 
 endmodule
