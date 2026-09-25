@@ -15,7 +15,7 @@ using an implemented design on your Basys3 boards.
 
 ## Lab Summary
 
-Summarize your learnings from the lab here.
+In Lab 05 we implemented a equation in naive.v to describe a truth table, from the truth table, we drew K-maps to come up with the equations for minterm and maxterm, and then we implemented those into minterm.v and maxterm.v. We simulated the design to check if we had errors before sending to the board. The next step was to analyze at the LUT and see how the inputs were mapped differently than our given truth table.
 
 ## Lab Questions
 
