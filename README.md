@@ -24,7 +24,8 @@ In Lab 05 we implemented a equation in naive.v to describe a truth table, from t
 KMap is actually a circular table that we display as a flat table, the edge outputs connect in a circular manner. 
 
 ### Why are the names Sum of Products and Products of Sums?
-The literal definition of what is happening. In Sum of Products by default when we pull a logical expression we default to and (boolean product) and every subsequent term is then combined with an or (boolean sum)
+The literal definition of what is happening. In Sum of Products by default when we pull a logical expression we default to AND (boolean product) and every subsequent term is then combined with an or (boolean sum). Products of Sum is the opposite when pulling a logical expression we default to OR (boolean sum) then combine every following term with AND (boolean product). 
 
 ### Open the test.v file – how are we able to check that the signals match using XOR?
+XOR (Exclusive OR) allows us to compare two different signals using the functions requirement for exclusivity. In the test file we compared the output of led[0] (naive out) and led[1] (minterm out) without overlapping their signals.
 
