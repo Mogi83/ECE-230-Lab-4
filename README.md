@@ -15,7 +15,7 @@ using an implemented design on your Basys3 boards.
 
 ## Lab Summary
 
-In Lab 05 we implemented a equation in naive.v to describe a truth table, from the truth table, we drew K-maps to come up with the equations for minterm and maxterm, and then we implemented those into minterm.v and maxterm.v. We simulated the design to check if we had errors before sending to the board. The next step was to analyze at the LUT and see how the inputs were mapped differently than our given truth table.
+In Lab 05, we implemented an equation in naive.v to describe a truth table. From the truth table, we drew K-maps to develop the equations for the minterm and maxterm, which we then implemented in minterm.v and maxterm.v. We simulated the design to check for errors before sending it to the board. The next step was to analyze the LUT and see how the inputs were mapped differently from our given truth table. 
 
 ## Lab Questions
 
@@ -24,8 +24,8 @@ In Lab 05 we implemented a equation in naive.v to describe a truth table, from t
 KMap is actually a circular table that we display as a flat table, the edge outputs connect in a circular manner. 
 
 ### Why are the names Sum of Products and Products of Sums?
-The literal definition of what is happening. In Sum of Products by default when we pull a logical expression we default to AND (boolean product) and every subsequent term is then combined with an or (boolean sum). Products of Sum is the opposite when pulling a logical expression we default to OR (boolean sum) then combine every following term with AND (boolean product). 
+The literal definition describes what is happening. In a Sum of Products, when we derive a logical expression, we default to AND (Boolean product), and each subsequent term is then combined with OR (Boolean sum). Product of Sums is the opposite: when deriving a logical expression, we default to OR (Boolean sum), and each subsequent term is combined with AND (Boolean product).
 
 ### Open the test.v file – how are we able to check that the signals match using XOR?
-XOR (Exclusive OR) allows us to compare two different signals using the functions requirement for exclusivity. In the test file we compared the output of led[0] (naive out) and led[1] (minterm out) without overlapping their signals.
+XOR (Exclusive OR) allows us to compare two different signals based on the function’s requirement for exclusivity. In the test file, we compared the outputs of `led[0]` (naive output) and `led[1]` (minterm output) without overlapping their signals.
 
